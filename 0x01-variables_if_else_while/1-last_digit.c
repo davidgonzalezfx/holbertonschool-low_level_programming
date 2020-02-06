@@ -1,8 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* more headers goes there */
-
 /**
  * main - main function
  * Description: From random number evaluate conditions

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "holberton.h"
+
 /**
  * main - main function
  * Description - Print combination fo two different numbers
@@ -7,7 +8,12 @@
  */
 int main(void)
 {
-	char myChar = 'd';
-	_putchar(myChar);	
+	int i;
+	char hbtn[] = "Holberton\n";
+
+	for (i = 0; i <= 9; i++)
+	{
+		putchar(hbtn[i]);
+	}
 	return (0);
 }

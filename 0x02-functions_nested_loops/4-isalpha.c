@@ -2,6 +2,7 @@
 #include "holberton.h"
 /**
  * _isalpha - checks alphabetic characters
+ * @c: param to be checked
  * Return: 1 if is alphabetic - 0 otherwise
  */
 int _isalpha(int c)

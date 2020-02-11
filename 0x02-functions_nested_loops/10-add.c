@@ -1,12 +1,11 @@
-#include <stdio.h>
-#include "holberton"
+#include "holberton.h"
 /**
- * add - add two ints
- * @a: a integer
- * @b: b integer
- * Return: an integer
+ * add - addition of two ints.
+ * @a: int a
+ * @b: int b
+ * Return: a + b
  */
 int add(int a, int b)
 {
-	return (a+b);
+	return (a + b);
 }

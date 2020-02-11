@@ -2,7 +2,7 @@
 #include "holberton.h"
 /**
  * print_sign - print sign of a number
- * @c: integer to be checked
+ * @n: integer to be checked
  * Return: 1 if greater than zero - 0 if zero - -1 if less than zero
  */
 int print_sign(int n)
@@ -20,7 +20,6 @@ int print_sign(int n)
 	else
 	{
 		_putchar('-');
-		_putchar('1');
 		return (-1);
 	}
 }

@@ -3,7 +3,7 @@
  * @c: int
  * Return: int
  */
-int _isdiggit(int c)
+int _isdigit(int c)
 {
 	if (c >= '1' && c <= '9')
 	{

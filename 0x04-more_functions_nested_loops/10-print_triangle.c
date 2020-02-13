@@ -8,22 +8,24 @@ void print_triangle(int size)
 {
 	int base, height;
 
-	if (size > 0)
+	if (size <= 0)
 	{
-		for (base = 0; base < size; base++)
+		putchar('\n');
+		return;
+	}
+	for (base = 0; base < size; base++)
+	{
+		for (height = 0; height < size; height++)
 		{
-			for (height = 0; height < size; height++)
+			if (height < size - base - 1)
 			{
-				if (height < size - base - 1)
-				{
-					printf(" ");
-				}
-				else
-				{
-					printf("#");
-				}
+				putchar(' ');
 			}
-			printf("\n");
+			else
+			{
+				putchar('#');
+			}
 		}
+		putchar('\n');
 	}
 }

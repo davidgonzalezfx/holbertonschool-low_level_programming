@@ -37,9 +37,9 @@ int main(void)
 			printf("%lu%lu", aux, c);
 		else
 			printf("%lu0%lu", aux, c);
-		if (count != 98)
+		if (i != 98)
 			printf(", ");
-		count++;
+		i++;
 	}
 	putchar('\n');
 	return (0);

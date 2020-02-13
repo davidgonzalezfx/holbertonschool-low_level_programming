@@ -1,6 +1,6 @@
 /**
  * _isupper - check for upper case
- * @c - char
+ * @c: char
  * Return: int
  */
 int _isupper(char c)

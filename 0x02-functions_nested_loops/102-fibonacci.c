@@ -7,22 +7,23 @@
  */
 int main(void)
 {
-	int cnt, new, aux, i;
+	long cnt, new, aux, i;
 
 	cnt = 0;
 	new = 1;
-	for (i = 0; i <= 49; i++)
+	for (i = 0; i < 50; i++)
 	{
 		aux = cnt + new;
 		cnt = new;
 		new = aux;
-		if (i != 49)
+		printf("%lu", aux);
+		if (i == 49)
 		{
-			printf("%lu, ", aux);
+			putchar('\n');	
 		}
 		else
 		{
-			printf("%lu\n", aux);
+			printf(", ");
 		}
 	}
 

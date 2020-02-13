@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  * print_triangle - print a triangle
  * @size: int
@@ -10,8 +10,7 @@ void print_triangle(int size)
 
 	if (size <= 0)
 	{
-		putchar('\n');
-		return;
+		_putchar('\n');
 	}
 	for (base = 0; base < size; base++)
 	{
@@ -19,13 +18,13 @@ void print_triangle(int size)
 		{
 			if (height < size - base - 1)
 			{
-				putchar(' ');
+				_putchar(' ');
 			}
 			else
 			{
-				putchar('#');
+				_putchar('#');
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }

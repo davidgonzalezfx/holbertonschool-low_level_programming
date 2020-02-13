@@ -19,7 +19,7 @@ int main(void)
 		printf("%lu", aux);
 		if (i == 49)
 		{
-			putchar('\n');	
+			putchar('\n');
 		}
 		else
 		{

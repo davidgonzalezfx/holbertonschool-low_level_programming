@@ -1,27 +1,33 @@
 #include <stdio.h>
-
-int isPrime(int num)
+/**
+ * isPrime - check for prime nums
+ * @num: int
+ * Return: int
+ */
+int isPrime(unsigned long num)
 {
-	int i;
+	unsigned long int i;
 
-	for ( i = 2; i != num; i++)
+	for (i = 2; i != num; i++)
 	{
-		if ( num % i == 0)
+		if (num % i == 0)
 		{
-			return 0;
+			return (0);
 		}
 	}
-	return 1;
-        
-};
-
-int main()
+	return (1);
+}
+/**
+ * main - main function
+ * Return: void
+ */
+int main(void)
 {
-	long i, n, prim, aux;
+	unsigned long i, n, aux;
 
 	n = 612852475143;
 	aux = n;
-	for ( i = 2; i < n; i++)
+	for (i = 2; i < n; i++)
 	{
 		while (aux % i == 0)
 		{
@@ -39,5 +45,5 @@ int main()
 
 
 	printf("\n");
-	return 0;
+	return (0);
 }

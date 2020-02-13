@@ -1,11 +1,11 @@
 /**
- * _isdiggit - check for diggit
+ * _isdigit - check for digit
  * @c: int
  * Return: int
  */
 int _isdigit(int c)
 {
-	if (c >= '1' && c <= '9')
+	if (c >= '0' && c <= '9')
 	{
 		return (1);
 	}

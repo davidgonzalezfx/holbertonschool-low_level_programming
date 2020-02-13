@@ -24,7 +24,7 @@ int main(void)
 	cnt = cnt / 1000;
 	b = new % 1000;
 	new = new / 1000;
-	while (count <= 98)
+	while (i <= 98)
 	{
 		aux2 = (a + b) / 1000;
 		c = (a + b) - aux2 * 1000;
@@ -33,7 +33,7 @@ int main(void)
 		b = c;
 		cnt = new;
 		new = aux;
-		if (p >= 100)
+		if (c >= 100)
 			printf("%lu%lu", aux, c);
 		else
 			printf("%lu0%lu", aux, c);

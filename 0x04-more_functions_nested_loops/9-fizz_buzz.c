@@ -22,7 +22,7 @@ int main(void)
 		{
 			printf("Buzz");
 		}
-		if (!(i % 3 == 0 || i % 5 == 0))
+		if (!(num % 3 == 0 || num % 5 == 0))
 		{
 			printf("%i", num);
 		}

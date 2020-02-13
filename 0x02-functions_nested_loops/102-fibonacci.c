@@ -18,11 +18,11 @@ int main(void)
 		new = aux;
 		if (i != 49)
 		{
-			printf("%i, ", aux);
+			printf("%lu, ", aux);
 		}
 		else
 		{
-			printf("%i\n", aux);
+			printf("%lu\n", aux);
 		}
 	}
 

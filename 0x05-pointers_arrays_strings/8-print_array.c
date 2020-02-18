@@ -1,17 +1,5 @@
 #include "holberton.h"
-/**
- * print_nums - print n num recursivly
- * @n: int
- * Return: void
- */
-void print_nums(int n)
-{
-	if (n >= 10)
-	{
-		print_nums(n / 10);
-	}
-	_putchar((n % 10) + '0');
-}
+#include <stdio.h>
 /**
  * print_array - print n elements of a
  * @a: int pointer
@@ -24,8 +12,14 @@ void print_array(int *a, int n)
 
 	for (el = 0; el < n - 1; el++)
 	{
-		print_nums(*(a + el));
-		_putchar(' ');
+		if (i == n - 1)
+		{
+			printf("%d", *(a + el));
+		}
+		else
+		{
+			printf("%d, ", *(a + el));
+		}
 	}
 	_putchar('\n');
 }

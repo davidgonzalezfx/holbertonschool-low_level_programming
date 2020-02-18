@@ -31,14 +31,12 @@ int _atoi(char *s)
 		{
 			cnt = (cnt * 10) + (*(s + size) - '0');
 			if (!(*(s + size + 1) >= '0' && *(s + size + 1) <= '9'))
-			{
-				if (aux == 0)
-				{
-					cnt *= -1;
-				}
 				break;
-			}
 		}
 	}
+	if (cnt == 0)
+		return (0);
+	if (aux == 0)
+		return (cnt *= -1);
 	return (cnt);
 }

@@ -10,7 +10,7 @@ void print_nums(int n)
 	{
 		print_nums(n / 10);
 	}
-	putchar((n % 10) + '0');
+	_putchar((n % 10) + '0');
 }
 /**
  * print_array - print n elements of a

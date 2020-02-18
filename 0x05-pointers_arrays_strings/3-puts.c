@@ -1,3 +1,4 @@
+#include "holberton.h"
 /**
  * _puts - print str
  * @str: char pointer

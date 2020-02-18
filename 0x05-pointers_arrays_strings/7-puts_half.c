@@ -1,3 +1,4 @@
+#include "holberton.h"
 /**
  * puts_half - show second half of str
  * @str: char pointer
@@ -11,6 +12,6 @@ void puts_half(char *str)
 	{}
 	for (half = (size - 1) / 2; half != size; half++)
 	{
-		putchar(*(str + half));
+		_putchar(*(str + half));
 	}
 }

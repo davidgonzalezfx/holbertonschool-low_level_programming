@@ -1,3 +1,4 @@
+#include "holberton.h"
 /**
  * puts2 - show odd positions
  * @str: char pointer
@@ -11,7 +12,7 @@ void puts2(char *str)
 	{
 		if (i % 2 == 0)
 		{
-			putchar(*(str + i));
+			_putchar(*(str + i));
 		}
 	}
 }

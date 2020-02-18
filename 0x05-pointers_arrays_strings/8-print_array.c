@@ -1,3 +1,4 @@
+#include "holberton.h"
 /**
  * print_nums - print n num recursivly
  * @n: int
@@ -24,7 +25,7 @@ void print_array(int *a, int n)
 	for (el = 0; el < n && *(a + el) != '\0'; el++)
 	{
 		print_nums(*(a + el));
-		putchar(' ');
+		_putchar(' ');
 	}
-	putchar('\n');
+	_putchar('\n');
 }

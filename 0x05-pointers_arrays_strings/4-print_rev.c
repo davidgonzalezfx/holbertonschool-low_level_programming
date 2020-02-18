@@ -15,4 +15,5 @@ void print_rev(char *s)
 	{
 		_putchar(*(s + cnt2));
 	}
+	_putchar('\n');
 }

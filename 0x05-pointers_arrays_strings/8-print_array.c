@@ -22,7 +22,7 @@ void print_array(int *a, int n)
 {
 	int el;
 
-	for (el = 0; el < n && *(a + el) != '\0'; el++)
+	for (el = 0; el < n - 1; el++)
 	{
 		print_nums(*(a + el));
 		_putchar(' ');

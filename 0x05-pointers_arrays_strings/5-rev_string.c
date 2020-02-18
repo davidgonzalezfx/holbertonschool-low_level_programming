@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  * rev_string - rev a string
  * @s: char pointer

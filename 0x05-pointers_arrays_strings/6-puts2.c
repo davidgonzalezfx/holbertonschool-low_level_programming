@@ -13,5 +13,5 @@ void puts2(char *str)
 	}
 	for (odd = 0; odd < size; odd += 2)
 		_putchar(*(str + odd));
-	_putchar('\');
+	_putchar('\n');
 }

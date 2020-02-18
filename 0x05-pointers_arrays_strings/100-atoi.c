@@ -5,7 +5,7 @@
  */
 int _atoi(char *s)
 {
-	int num, size, i, cnt, aux;
+	int size, cnt, aux;
 
 	aux = 1;
 	cnt = 0;

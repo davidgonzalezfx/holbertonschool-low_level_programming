@@ -6,9 +6,10 @@
 int _atoi(char *s)
 {
 	int size, aux;
+	unsigned int cnt;
 
 	aux = 1;
-	unsigned int cnt = 0;
+	cnt = 0;
 	for (size = 0; *(s + size) != '\0'; size++)
 	{
 		if (*(s + size) == '-')

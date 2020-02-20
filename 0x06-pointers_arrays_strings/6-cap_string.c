@@ -17,6 +17,6 @@ char *cap_string(char *s)
 					*(s + i + 1) = *(s + i + 1) - 32;
 		}
 	}
-
+	*(s + 0) = *(s + 0) - 32;
 	return (s);
 }

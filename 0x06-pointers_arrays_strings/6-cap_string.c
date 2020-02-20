@@ -6,7 +6,7 @@
 char *cap_string(char *s)
 {
 	unsigned int i, j;
-	char *dic = "   \n ,;.!?\"(){}";
+	char *dic = "\n ,;.!?\"(){}";
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{

@@ -6,7 +6,7 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i, size1, size2, ret;
+	int i, size1, size2;
 
 	for (size1 = 0; *(s1 + size1) != '\0'; size1++)
 	{}
@@ -18,13 +18,11 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[i] > s2[i])
 		{
-			ret = (10 + size1);
-			return (ret);
+			return (s1[i] - s2[i]);
 		}
 		else if (s1[i] < s2[i])
 		{
-			ret = (-10 - size2);
-			return (ret);
+			return (s1[i] - s2[i]);
 		}
 	}
 	return (0);

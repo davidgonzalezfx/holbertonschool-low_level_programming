@@ -6,11 +6,11 @@
 char *cap_string(char *s)
 {
 	unsigned int i, j;
-	char *dic = "\n ,;.!?\"(){}";
+	char dic[12] = "\n ,;.!?\"(){}";
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		for (j = 0; j < sizeof(dic); j++)
+		for (j = 0; j < 12; j++)
 		{
 			if (s[i] == dic[j] || s[i] == 9)
 				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')

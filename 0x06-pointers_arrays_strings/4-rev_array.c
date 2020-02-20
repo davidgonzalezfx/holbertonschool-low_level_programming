@@ -1,7 +1,8 @@
 /**
- * reverse_array -
- *
- * Return:
+ * reverse_array - reverse in array
+ * @a: array
+ * @n: size
+ * Return: void
  */
 void reverse_array(int *a, int n)
 {

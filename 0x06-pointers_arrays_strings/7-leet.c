@@ -15,7 +15,7 @@ char *leet(char *s)
 		{
 			if (s[i] == letter[j] || s[i] == (letter[j] - 32))
 				s[i] = bcrypt[j];
-		}	
+		}
 	}
 	return (s);
 }

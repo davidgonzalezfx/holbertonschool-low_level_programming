@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _strpbrk -
- * @s: char pointer
+ * _strpbrk - searches a string for any of a set of bytes
+ * @s: char pointer 
  * @accept: char pointer
- * Return: 
+ * Return: char pointer
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -17,7 +17,7 @@ char *_strpbrk(char *s, char *accept)
 		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
-			{	
+			{
 				limit = 0;
 				break;
 			}

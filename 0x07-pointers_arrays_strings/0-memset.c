@@ -5,16 +5,15 @@
  * @s: char pointer
  * @b: char
  * @n: int
- * Return: char pointer 
+ * Return: char pointer
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-  unsigned int times;
-  for(times = 0; times < n; times++)
-  {
-    *(s + times) = b;
-  }
+	unsigned int times;
 
-  return (s);
-
+	for (times = 0; times < n; times++)
+	{
+		*(s + times) = b;
+	}
+	return (s);
 }

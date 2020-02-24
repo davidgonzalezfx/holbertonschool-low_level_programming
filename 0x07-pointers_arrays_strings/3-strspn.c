@@ -8,15 +8,19 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int limit;
+	unsigned int i, j;
 
-	for (limit = 1; s[limit - 1] != '\0'; limit++)
+	for (i = 0; s[i]; i++)
 	{
-		if (s[limit] == accept[0])
+		for (j = 0; accept[j]; j++)
 		{
-			limit++;
-			break;
+			if (s[i] == accept[j])
+			{
+				break;
+			}
 		}
+		if (!(accept[j]))
+			break;
 	}
-	return (limit);
+	return (i);
 }

@@ -16,11 +16,11 @@ void print_diagsums(int *a, int size)
 		for (j = 0; j < size; j++)
 		{
 			if (i == j)
-				first += *(a + aux);
+				first += a[aux];
 			if (i + j + 1 == size)
-				second += *(a + aux);
+				second += a[aux];
 			aux++;
 		}
 	}
-	printf("%u, %u\n", first, second);
+	printf("%d, %d\n", first, second);
 }

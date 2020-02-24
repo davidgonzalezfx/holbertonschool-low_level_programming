@@ -10,15 +10,12 @@ char *_strchr(char *s, char c)
 {
 	int limit;
 
-	for (limit = 0; *(s + limit) != '\0'; limit++)
+	for (limit = 0; s[limit]; limit++)
 	{
-		s++;
-		if (*(s + limit) == c)
-			break;
+		if (s[limit] == c)
+			return (s + limit);
 	}
-	if (*(s + limit))
-	{
-		return (s);
-	}
+	if (s[limit] == c)
+		return (s + limit);
 	return (0);
 }

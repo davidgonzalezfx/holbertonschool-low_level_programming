@@ -9,12 +9,12 @@
 int init_prime(int cnt, int n)
 {
 	if (n <= 1)
-		return 0;
+		return (0);
 	if (n == cnt)
 		return (1);
 	if (n % cnt == 0)
-		return 0;
-	return init_prime(++cnt, n);
+		return (0);
+	return (init_prime(++cnt, n));
 }
 
 

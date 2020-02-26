@@ -23,13 +23,13 @@ int _strlen_recursion(char *s)
 int aux(char *s, int rev, int p)
 {
 	rev--;
-	if (*s == s[rev] && *(s + 1))
+	if (*s == s[rev])
 	{
-		aux(++s, --rev, p);
+		if (rev < (p - 1) / 2)
+			return (1);
+		return (1 * aux(++s, --rev, p));
 	}
-	else
-		return (0);
-	return (1);
+	return (0);
 }
 /**
  * is_palindrome - check palindrome word
@@ -43,7 +43,7 @@ int is_palindrome(char *s)
 	p = _strlen_recursion(s);
 	if (p == 0)
 		return (1);
-	if (*s)
+	if (*s && s)
 		return (aux(s, p, p));
 	return (0);
 }

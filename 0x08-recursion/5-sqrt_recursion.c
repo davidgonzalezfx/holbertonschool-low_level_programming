@@ -2,8 +2,9 @@
 
 /**
  * init_sqrt - natural square root of a number, from 1
+ * @i: int counter
  * @n: int
- * Return: sqrt(n) 
+ * Return: sqrt(n)
  */
 int init_sqrt(int i, int n)
 {
@@ -14,13 +15,13 @@ int init_sqrt(int i, int n)
 	if (i * i > n)
 		return (-1);
 	else
-		return (init_sqrt(i+1, n));
+		return (init_sqrt(i + 1, n));
 }
 
 /**
  * _sqrt_recursion - natural square root of a number
  * @n: int
- * Return: sqrt(n) 
+ * Return: sqrt(n)
  */
 int _sqrt_recursion(int n)
 {

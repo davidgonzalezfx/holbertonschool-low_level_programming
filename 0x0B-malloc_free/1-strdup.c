@@ -1,18 +1,4 @@
-
 #include "holberton.h"
-/**
- * _strlen - return length
- * @s: char
- * Return: int
- */
-int _strlen(char *s)
-{
-	if (*s)
-		return (1 + _strlen(s + 1));
-	else
-		return (0);
-}
-
 /**
  * _strdup - new pointer with copy of other
  * @str: char pointer
@@ -20,17 +6,18 @@ int _strlen(char *s)
  */
 char *_strdup(char *str)
 {
-	char *newCopy, *start;
-	int size = _strlen(str);
+	int size, i;
+	char *newCopy = NULL;
 
-	newCopy = malloc(sizeof(char) * size);
-	start = newCopy;
-	if (newCopy)
-	{
-		for (; *str;)
-			*newCopy++ = *str++;
-		newCopy = start;
-		return (newCopy);
-	}
-	return (NULL);
+	if (str == NULL)
+		return (NULL);
+	for (size = 0; str[size] != '\0'; size++)
+	{}
+	newCopy = malloc(sizeof(char) * size + 1);
+	if (newCopy == NULL)
+		return (NULL);
+	for (i = 0; i < size; i++)
+		newCopy[i] = str[i];
+	newCopy[i] = '\0';
+	return (newCopy);
 }

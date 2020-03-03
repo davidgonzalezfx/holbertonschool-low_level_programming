@@ -10,7 +10,7 @@ int **alloc_grid(int width, int height)
 {
 	int col, row, **matrix = NULL;
 
-	if (width == 0 || height == 0)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 	matrix = malloc(sizeof(int *) * height);
 	if (!matrix)

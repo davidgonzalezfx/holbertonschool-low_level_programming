@@ -11,7 +11,7 @@ char *create_array(unsigned int size, char c)
 	char *p;
 	unsigned int i;
 
-	if ( size == 0)
+	if (size == 0)
 	{
 		return 0;
 	}
@@ -20,5 +20,5 @@ char *create_array(unsigned int size, char c)
 	{
 		*(p + i) = c;
 	}
-	return p;
+	return (p);
 }

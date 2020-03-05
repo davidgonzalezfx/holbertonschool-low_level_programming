@@ -21,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	for (; *s1; index++, s1++)
 		*(newConcat + index) = *s1;
-	for (; limit < n; index++, s2++, limit++)
+	for (; limit <= size2 && limit < n; index++, s2++, limit++)
 		*(newConcat + index) = *s2;
 	return (newConcat);
 }

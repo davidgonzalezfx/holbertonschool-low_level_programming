@@ -22,12 +22,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{};
 	if (n >= size2)
 		n = size2;
-	newConcat = malloc(size1 + size2);
+	newConcat = malloc(size1 + n);
 	if (!newConcat)
 		return (NULL);
 	for (; s1[index]; index++)
-		*(newConcat + index) = s1[index];
+		newConcat[index] = s1[index];
 	for (; limit < n; index++, limit++)
-		*(newConcat + index) = s2[limit];
+		newConcat[index] = s2[limit];
 	return (newConcat);
 }

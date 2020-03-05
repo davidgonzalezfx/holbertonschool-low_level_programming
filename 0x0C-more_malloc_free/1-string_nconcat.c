@@ -12,10 +12,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *newConcat = NULL;
 	unsigned int size1 = 0, size2 = 0, index = 0, limit = 0;
 
-	for (; s1[size1] != '\0'; size1++)
+	if (!s1)
+		s1 = "";
+	if (!s2)
+		s2 = "";
+	for (; s1[size1]; size1++)
 	{};
-	for (; s2[size2] != '\0'; size2++)
+	for (; s2[size2]; size2++)
 	{};
+	if (n >= size2)
+		n = size2;
 	newConcat = malloc(size1 + size2);
 	if (!newConcat)
 		return (NULL);

@@ -1,7 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 
-/** 
+/**
  * struct dog - dog
  * @name: char*
  * @age: int
@@ -9,7 +9,8 @@
  *
  * Description: define dog datatype
  */
-struct dog {
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;

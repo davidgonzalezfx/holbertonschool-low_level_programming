@@ -27,7 +27,7 @@ int main(int ac, char *av[])
 	ptr = (unsigned char *)main;
 	for (; i < param; i++)
 	{
-		printf("%.2x", ptr[i]);
+		printf("%x", ptr[i]);
 		if (i < param)
 			printf(" ");
 	}

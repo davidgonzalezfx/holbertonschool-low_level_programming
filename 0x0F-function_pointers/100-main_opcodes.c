@@ -26,7 +26,7 @@ int main(int ac, char *av[])
 	}
 	ptr = (unsigned char *)main;
 	for (; i < param - 1; i++)
-		printf("%02hhx", ptr[i]);
+		printf("%02hhx ", ptr[i]);
 	printf("%02hhx\n", ptr[i]);
 	return (0);
 }

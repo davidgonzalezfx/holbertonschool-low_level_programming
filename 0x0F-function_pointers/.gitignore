@@ -4,3 +4,4 @@
 *.exe
 _putchar.c
 !3-main.c
+!100-main_opcodes.c

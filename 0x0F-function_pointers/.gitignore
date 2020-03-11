@@ -3,3 +3,4 @@
 *main*
 *.exe
 _putchar.c
+!3-main.c

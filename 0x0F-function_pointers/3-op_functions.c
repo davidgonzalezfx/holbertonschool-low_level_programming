@@ -20,7 +20,7 @@ int op_sub(int a, int b)
 	return (a - b);
 }
 /**
- * op_mult - multiplies a with b
+ * op_mul - multiplies a with b
  * @a: int
  * @b: int
  * Return: void

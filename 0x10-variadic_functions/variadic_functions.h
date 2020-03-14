@@ -5,7 +5,7 @@
 #include <stdarg.h>
 
 /**
- * funs - struct for format print
+ * struct funs - struct for format print
  * @fmt: char *
  * @f: function to be called
  * Return: void

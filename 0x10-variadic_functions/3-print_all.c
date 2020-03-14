@@ -34,6 +34,7 @@ void print_f(va_list list)
 void print_str(va_list list)
 {
 	char *str = va_arg(list, char *);
+
 	if (str)
 	{
 		printf("%s", str);
@@ -61,7 +62,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(list, format);
-	while (format[i])
+	while (format && format[i])
 	{
 		j = 0;
 		while (j < 4)

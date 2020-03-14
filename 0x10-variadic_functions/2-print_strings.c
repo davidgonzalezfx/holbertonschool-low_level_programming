@@ -8,12 +8,15 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	int i =0;
+	int i = 0;
 	char *str;
 	va_list list;
 
 	if (n < 1)
+	{
 		printf("\n");
+		return;
+	}
 	else
 	{
 		va_start(list, n);
@@ -26,6 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 				printf("(nil)");
 			if (separator != NULL && i != (int)n - 1)
 				printf("%s", separator);
+
 		}
 	}
 	printf("\n");

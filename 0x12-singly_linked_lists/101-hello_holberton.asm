@@ -6,12 +6,10 @@ msg:	db "Hello, Holberton"
 	extern printf
 	global main
 main:
-	mov  edx, msg
-	mov  esi, 1
+	mov  esi, msg
 	mov  edi, fmt
 	mov  eax, 0
 	call printf
 
-	mov ebx, 0
-	mov eax, 1
+	mov eax, 0
 	ret

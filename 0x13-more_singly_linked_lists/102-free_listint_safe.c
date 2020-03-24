@@ -7,7 +7,7 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-	const listint_t *forward, *back;
+	listint_t *forward, *back;
 	unsigned int cnt = 0;
 
 	forward = *h;
@@ -24,6 +24,6 @@ size_t free_listint_safe(listint_t **h)
 		if (forward >= back)
 			break;
 	}
-
+	*h = 0;
 	return (cnt);
 }

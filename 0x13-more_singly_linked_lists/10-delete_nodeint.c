@@ -32,7 +32,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 		return (1);
 	}
-	else if (index == 0 && *head)
+	else if (index == 0)
 	{
 		nxt = nxt->next;
 		free(*head);

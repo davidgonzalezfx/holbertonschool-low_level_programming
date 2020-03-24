@@ -11,8 +11,12 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	listint_t *indexNode = head;
 	unsigned int actualPos = 0;
 
-	for (actualPos = 0; actualPos < index; actualPos++)
+	for (actualPos = 0; indexNode != NULL; actualPos++)
+	{
+		if (actualPos == index)
+			break;
 		indexNode = indexNode->next;
+	}
 
 	if (indexNode == NULL)
 		return (NULL);

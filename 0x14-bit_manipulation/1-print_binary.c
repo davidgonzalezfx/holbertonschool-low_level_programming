@@ -8,12 +8,10 @@ void dec_bin(unsigned long int n)
 {
 	if (n == 0)
 		return;
-	else
-	{
-		dec_bin(n >> 1);
-		n = n & 1;
-		_putchar(n + 48);
-	}
+
+	dec_bin(n >> 1);
+	n = n & 1;
+	_putchar(n + 48);
 }
 /**
  * print_binary - print decimal in binary

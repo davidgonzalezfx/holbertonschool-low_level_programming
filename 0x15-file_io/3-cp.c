@@ -31,18 +31,20 @@ int main(int ac, char **agv)
 		handle_error(agv[2], 0, 2);
 
 
+	while (readed == 1024)
+	{
+		/* Read 1024 bytes at a time from file_from to make less system calls */
+		readed = read(file_from, buffer, 1024);
+		/* Throw error if file_from can't be readed */
+		if (readed == error)
+			handle_error(agv[1], 0, 1);
 
-	/* Read 1024 bytes at a time from file_from to make less system calls */
-	readed = read(file_from, buffer, 1024);
-	/* Throw error if file_from can't be readed */
-	if (readed == error)
-		handle_error(agv[1], 0, 1);
-
-	/* Write 'readed' bytes from buffer, to 'file_to' */
-	writed = write(file_to, buffer, readed);
-	/* Throw error if file_to can't be writed */
-	if (writed == error)
-		handle_error(agv[2], 0, 2);
+		/* Write 'readed' bytes from buffer, to 'file_to' */
+		writed = write(file_to, buffer, readed);
+		/* Throw error if file_to can't be writed */
+		if (writed == error)
+			handle_error(agv[2], 0, 2);
+	}
 
 
 	/* Try to close file_from iostream */

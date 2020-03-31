@@ -35,6 +35,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (writed == error)
 		return (0);
 
+	/* Close iostream*/
 	close(filedes);
 	return (writed);
 }

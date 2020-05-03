@@ -23,15 +23,23 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			(*head)->prev = NULL;
 		return (1);
 	}
-
 	for (cnt = 0; actual; cnt++)
 	{
 		if (cnt == index)
 		{
-			(actual->prev)->next = actual->next;
-			(actual->next)->prev = actual->prev;
-			free(actual);
-			return (1);
+			if (actual->next)
+			{
+				(actual->prev)->next = actual->next;
+				(actual->next)->prev = actual->prev;
+				free(actual);
+				return (1);
+			}
+			else
+			{
+				(actual->prev)->next = NULL;
+				free(actual);
+				return (1);
+			}
 		}
 		actual = actual->next;
 	}

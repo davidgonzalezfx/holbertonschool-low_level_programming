@@ -7,10 +7,10 @@
  */
 int sum_dlistint(dlistint_t *head)
 {
+	int acumm = 0;
+
 	if (!head)
 		return (0);
-
-	int acumm = 0;
 
 	while (head)
 	{

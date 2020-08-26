@@ -41,7 +41,7 @@ size_t binary_recursive(int *array, size_t size, int value)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t el;
+	int el;
 
 	el = binary_recursive(array, size, value);
 
